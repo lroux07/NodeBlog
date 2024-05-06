@@ -6,10 +6,11 @@ router.get('/', (req, res) => {
     res.sendfile('./index.html');
 });
 router.get('/home', (req, res) => {
-    res.send('<h1>Welcome to the Home Page</h1>');
+    res.sendfile('./home.html');
 });
+
 router.get('/about', (req, res) => {
-    res.send('<h1>About Us</h1><p>This is the about page</p>');
+    res.sendfile('./about.html');
 });
 
 server.use('/', router);
