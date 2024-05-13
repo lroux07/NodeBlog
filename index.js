@@ -9,8 +9,12 @@ router.get('/home', (req, res) => {
     res.sendfile('./home.html');
 });
 
-router.get('/about', (req, res) => {
-    res.sendfile('./about.html');
+router.get('/blog', (req, res) => {
+    res.sendfile('./blog.html');
+});
+
+router.get('/create', (req, res) => {
+    res.sendfile('./create.html');
 });
 
 server.use('/', router);
