@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeBlog</title>
+    <link rel="stylesheet" href="/create.css">
+</head>
+<body>
+    <h1>Create page</h1>
+    <form action="./create.html" method="post">
+        <label for="authorBlog">Entrez votre nom d'utilisateur</label>
+        <input type="text" id="authorBlog" placeholder="Ecrire ici">
+        <label for="blogName">De quoi parle votre blog ?</label>
+        <input type="text" id="blogName" placeholder="Ecrire ici">
+        <label for="blogContent">Quelle est votre histoire ?</label>
+        <textarea name="blogContent" id="blogContent" rows="30rem" placeholder="Ecrire ici"></textarea>
+        <input type="button" value="Ajouter" id="add">
+    </form>
+    <script type="module" src="/create.js"></script>
+</body>
+</html>
